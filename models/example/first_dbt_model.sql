@@ -17,8 +17,9 @@ with cities as (
     select code as code
     select parent_code as parent_code
 
+    from brantu-test.mongo_production_brantu.cities
 )
 
 select *
-from brantu-test.mongo_production_brantu.cities
+from cities
 where id is not null

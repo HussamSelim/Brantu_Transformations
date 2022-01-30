@@ -12,12 +12,10 @@ models:
                 - not_null
           - name: status
             description: "City's State"
-            tests:
-                - not_null
+            
           - name: city
             description: "City"
-            tests:
-                - not_null
+
           - name: code
             description: "Code"
             
