@@ -12,9 +12,10 @@
 with cities as (
 
     select 
-        _id as id
-        name_en as city
-        code as code
+        _id as id,
+        active as status,
+        name_en as city,
+        code as code,
         parent_code as parent_code
 
     from brantu-test.mongo_production_brantu.cities

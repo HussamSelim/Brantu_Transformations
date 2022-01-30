@@ -13,10 +13,15 @@ models:
             
           - name: city
             description: "City"
+            tests:
+              -not_null
+
+          - name: status
+            description: "status"
 
           - name: code
-            description: "Code"
+            description: "city inside a region"
             
           - name: parent_code
-            description: "Code"
+            description: "Region"
             
