@@ -10,8 +10,6 @@ models:
             tests:
                 - unique
                 - not_null
-          - name: status
-            description: "City's State"
             
           - name: city
             description: "City"
