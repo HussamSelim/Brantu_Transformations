@@ -18,7 +18,7 @@ with cities as (
         code as code,
         parent_code as parent_code
 
-    from brantu-test.mongo_production_brantu.cities
+    from brantu-test.mongo_brantu.cities
 )
 
 select *
