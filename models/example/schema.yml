@@ -14,7 +14,7 @@ models:
           - name: city
             description: "City"
             tests:
-              -not_null
+                - not_null
 
           - name: status
             description: "status"
