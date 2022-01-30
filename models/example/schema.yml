@@ -10,12 +10,17 @@ models:
             tests:
                 - unique
                 - not_null
-
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: status
+            description: "City's State"
             tests:
-                - unique
                 - not_null
+          - name: city
+            description: "City"
+            tests:
+                - not_null
+          - name: code
+            description: "Code"
+            
+          - name: parent_code
+            description: "Code"
+            

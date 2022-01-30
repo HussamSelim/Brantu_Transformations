@@ -9,19 +9,16 @@
 
 {{ config(materialized='table') }}
 
-with source_data as (
+with cities as (
 
-    select 1 as id
-    union all
-    select null as id
+    select _id as id
+    select active as status
+    select name_en as city
+    select code as code
+    select parent_code as parent_code
 
 )
 
 select *
-from source_data
-
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null
+from brantu-test.mongo_production_brantu.cities
+where id is not null
