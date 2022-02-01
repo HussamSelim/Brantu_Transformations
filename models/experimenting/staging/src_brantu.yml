@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: brantu_test
+    database: brantu-test
+    schema: mongo_production_brantu
+    tables:
+      - name: cities
+      - name: regions
+
+   

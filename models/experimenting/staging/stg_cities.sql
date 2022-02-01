@@ -1,6 +1,3 @@
-
-{{ config(materialized='table') }}
-
 with cities as (
 
     select 
@@ -10,5 +7,7 @@ with cities as (
         code as code,
         parent_code as parent_code
 
-    from brantu-test.mongo_production_brantu.cities
+    from {{ source('brantu_test', 'cities') }}
 )
+
+select * from cities
